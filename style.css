@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100vh;
+}
+header {
+  background-color: rgb(36, 35, 35);
+  text-align: center;
+  color: white;
+}
+header h1 {
+  padding: 25px 0;
+}
+
+.container {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .calculadora {
+  background-color: rgb(36, 36, 36);
+  max-width: 300px;
+  width: 100%;
+  height: 400px;
+  padding: 25px 15px 80px 15px;
+  border-radius: 15px;
+  box-shadow: 0 8px 8px 0 rgb(46, 46, 46);
+}
+.display-calculadora {
+  background-color: white;
+  width: 100%;
+  height: 65px;
+}
+.display-calculadora .previous,
+.current {
+  padding: 0 15px 0 5px;
+  height: 25px;
+  font-size: 25px;
+  text-align: right;
+  font-weight: 700;
+}
+.display-calculadora .previous {
+  font-size: 18px;
+  padding: 2px 10px 0 0;
+  font-weight: 400;
+}
+.teclas-calculadora {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-gap: 1;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid rgb(88, 88, 88);
+}
+.teclas-calculadora button {
+  background-color: rgb(56, 53, 53);
+  border: 1px solid rgb(88, 88, 88);
+  color: white;
+  cursor: pointer;
+}
+.teclas-calculadora button:hover {
+  background-color: rgb(29, 29, 29);
+}
+.teclas-calculadora .teclas-operadoras {
+  background-color: rgb(233, 47, 0);
+  color: white;
+  font-size: 20px;
+}
+.teclas-calculadora .teclas-operadoras:hover {
+  background-color: rgb(177, 36, 1);
+}
+.teclas-calculadora .tecla-resultado {
+  background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+  grid-column: -2;
+  grid-row: 2 / span 4;
+  border: 1px solid rgb(88, 88, 88);
+  font-size: 25px;
+}
+.teclas-calculadora .tecla-resultado:hover {
+  background-image: linear-gradient(to bottom, #fa5a15, #fe886a);
+}
